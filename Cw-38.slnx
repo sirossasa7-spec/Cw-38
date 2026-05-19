@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Элементы решения/">
+    <File Path="Music.cpp" />
+  </Folder>
+  <Project Path="Cw-38/Cw-38.vcxproj" />
+</Solution>
