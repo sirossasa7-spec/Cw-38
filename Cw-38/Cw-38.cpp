@@ -4,6 +4,7 @@
 #include "Music.h"
 #include <deque>
 #include "PriorityQueue.h"
+#include "Person.h"
 
 
 int main()
@@ -66,6 +67,17 @@ int main()
 	//nums.push_back(8);
 
 	//nums.show();
+
+	myQueue::PriorityQueue<Person> hospital;
+	hospital.push_back(Person("Єлисей"));
+	hospital.push_back(Person("Михайло",0,0,1));
+	hospital.push_back(Person("Ірина",1,1,0));
+	hospital.push_back(Person("Максим",1,0,0));
+
+	while (!hospital.isEmpty()) {
+		hospital.first().showInfo();
+		hospital.pop_front();
+	}
 
 	return 0;
 }

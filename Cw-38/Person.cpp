@@ -25,3 +25,8 @@ void Person::showInfo() const
 	std::cout << "isMilitary: " << std::boolalpha << isMilitary << std::endl;
 
 }
+
+bool Person::operator<(const Person& obj) const&
+{
+	return (this->isVeteran+this->isDeputat+this->isMilitary)<(obj.isVeteran+obj.isDeputat+obj.isMilitary);
+}
